@@ -1,0 +1,153 @@
+:root {
+  --main: #303030;
+  --green: #2a9d8f;
+  --white: #FFFFFF;
+  --gris: #54575a;
+  --red: #e63946;
+}
+
+
+/* +++++++++++ Globales +++++++++++ */
+
+a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: var(--white);
+  padding: .6rem .1rem;
+}
+
+
+.contenedor {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+
+/* +++++++++++ Header +++++++++++ */
+
+.header {
+  background-color: var(--main);
+  width: 100%;
+  height: 80px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__flex {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.logo {
+  color: var(--green);
+  font-size: 2rem;
+}
+
+.header__nav {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav a {
+  border-bottom: 2px solid var(--main);
+}
+.header__nav .active {
+  border-bottom: 2px solid var(--green);
+}
+
+
+/* +++++++++++ main +++++++++++ */
+
+.form {
+  background-color: var(--main);
+  width: 95%;
+  max-width: 480px;
+  margin: 10rem auto;
+  padding: 1rem;
+  padding-bottom: 2rem;
+  border-radius: .3rem;
+}
+
+.form h2 {
+  text-align: center;
+  padding: 1rem;
+  color: var(--green);
+}
+
+label {
+  color: var(--white);
+  display: inline-block;
+  padding: .8rem 0.1rem;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+  padding: .8rem 1rem;
+  border: 2px solid var(--gris);
+  border-radius: .3rem;
+  font-size: 1rem;
+  outline: none;
+  background-color: transparent;
+  color: var(--white);
+}
+
+.input:focus {
+  border: 2px solid var(--green);
+}
+
+.button-auth {
+  display: block;
+  width: 100%;
+  padding: .8rem 1rem;
+  border: none;
+  border-radius: .3rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+  background-color: var(--green);
+  color: var(--white);
+}
+
+
+.button-logout {
+  padding: .6rem 1rem;
+  border: none;
+  border-radius: .3rem;
+  margin: 0 auto;
+  font-size: 1rem;
+  background-color: var(--green);
+  color: var(--white);
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+/* clases css para las alertas */
+
+.alerta-error {
+  background-color: var(--red);
+  padding: .8rem 1rem;
+  border: none;
+  display: block;
+  border-radius: .3rem;
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--white);
+  margin: 1rem auto;
+}
